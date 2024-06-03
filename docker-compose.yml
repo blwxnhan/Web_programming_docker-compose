@@ -1,0 +1,28 @@
+services:
+  node:
+    image: hb9999/chatting-app:1.1
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=qhdnjs283
+      - DB_NAME=chatting
+
+  db:
+    image: hb9999/mysql-chat:1.0
+    environment:
+      MYSQL_ROOT_PASSWORD: qhdnjs283
+      MYSQL_DATABASE: chatting
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./db/init/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db-data:
