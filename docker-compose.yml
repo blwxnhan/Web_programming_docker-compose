@@ -1,6 +1,6 @@
 services:
   node:
-    image: hb9999/chatting-app:1.1
+    image: hb9999/chatting-app:1.2
     restart: always
     ports:
       - "3000:3000"
