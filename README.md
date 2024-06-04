@@ -4,7 +4,7 @@
 
    - 1️⃣ 현재 레포지토리 clone하기 
     
-    `git clone https://github.com/blwxnhan/Web_programming_docker-compose.git`
+    `git clone URL`
     
    - 2️⃣ clone 받은 폴더로 들어가 실행 
     
