@@ -8,7 +8,7 @@ services:
       - db
     environment:
       - DB_HOST=db
-      - DB_PORT=3306
+      - DB_PORT=3305
       - DB_USER=root
       - DB_PASSWORD=qhdnjs283
       - DB_NAME=chatting
@@ -19,7 +19,7 @@ services:
       MYSQL_ROOT_PASSWORD: qhdnjs283
       MYSQL_DATABASE: chatting
     ports:
-      - "3306:3306"
+      - "3305:3305"
     volumes:
       - db-data:/var/lib/mysql
       - ./db/init/init.sql:/docker-entrypoint-initdb.d/init.sql
