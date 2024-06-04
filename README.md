@@ -10,5 +10,5 @@
     
     `docker-compose up --build`
 
-- db는 3305 포트, chatting 앱은 3000 포트에서 실행 
+- db는 3306 포트, chatting 앱은 3000 포트에서 실행 
 - [localhost](http://localhost:3000/) 접속하여 앱 실행
